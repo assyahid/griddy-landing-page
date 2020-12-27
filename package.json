@@ -1,0 +1,57 @@
+{
+  "name": "gatsby-starter-griddy",
+  "private": true,
+  "description": "A simple starter for artist & photographer showing their work that created with Bulma CSS Framework",
+  "version": "0.0.1",
+  "author": "Habib Mustofa <habib@mustofa.id>",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bulma": "^0.7.5",
+    "gatsby": "^2.9.4",
+    "gatsby-image": "^2.2.3",
+    "gatsby-plugin-feed": "^2.3.1",
+    "gatsby-plugin-google-analytics": "^2.1.1",
+    "gatsby-plugin-manifest": "^2.2.0",
+    "gatsby-plugin-offline": "^2.2.0",
+    "gatsby-plugin-react-helmet": "^3.1.0",
+    "gatsby-plugin-robots-txt": "^1.4.0",
+    "gatsby-plugin-sass": "^2.1.0",
+    "gatsby-plugin-sharp": "^2.2.1",
+    "gatsby-plugin-sitemap": "^2.2.0",
+    "gatsby-remark-copy-linked-files": "^2.1.0",
+    "gatsby-remark-images": "^3.1.2",
+    "gatsby-remark-images-medium-zoom": "^1.2.1",
+    "gatsby-remark-prismjs": "^3.3.3",
+    "gatsby-source-filesystem": "^2.1.1",
+    "gatsby-transformer-remark": "^2.6.4",
+    "gatsby-transformer-sharp": "^2.2.0",
+    "prismjs": "^1.16.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "keywords": [
+    "gatsby",
+    "starter",
+    "griddy"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby clean && gatsby build",
+    "dev": "gatsby develop",
+    "format": "standard --fix src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mustofa-id/gatsby-starter-griddy"
+  },
+  "bugs": {
+    "url": "https://github.com/mustofa-id/gatsby-starter-griddy/issues"
+  }
+}

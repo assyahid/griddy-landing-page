@@ -1,0 +1,336 @@
+// Our custom style here
+
+/* scrollbar style on chrome & opera */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.274); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.459); 
+}
+
+/* scrollbar for firefox */
+html {
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  }
+  
+// footer
+.footer {
+  padding: 3rem 1.5rem 3rem;
+  background-color: whitesmoke
+}
+
+// bg-shadow
+.has-bg-shadow {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.11);
+}
+
+// rounded corner
+.has-rounded-corner {
+  border-radius: 10px;
+}
+
+// cover pic
+.coverpic {
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+}
+.coverbox {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 1.1rem;
+  
+}
+
+// box content
+.box {
+  width: 100%;
+}
+
+// profile pic
+.has-image-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+#profile_pic {
+  bottom: 4rem;
+}
+.is-profile {
+  border-radius: 290486px;
+}
+.is-box-profile {
+  border-radius: 290486px;
+  padding: 4px;
+  -webkit-box-shadow: 0 0 0 rgba(255, 255, 255, 0.11);
+  -moz-box-shadow: 0 0 0 rgba(255, 255, 255, 0.11);
+          box-shadow: 0 0 0 rgba(255, 255, 255, 0.11);
+}
+
+// profil info
+.profile_info {
+  margin-top: -3.3rem;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+// container
+.container {
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (min-width: 1088px) {
+  .container {
+    max-width: 900px;
+    width: 900px;
+  }
+  .container.is-fluid {
+    margin-left: 64px;
+    margin-right: 64px;
+    max-width: none;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .container.is-widescreen {
+    max-width: 950px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1471px) {
+  .container.is-fullhd {
+    max-width: 950px;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 950px;
+    width: 950px;
+  }
+}
+
+@media screen and (min-width: 1472px) {
+  .container {
+    max-width: 950px;
+    width: 950px;
+  }
+}
+
+// button
+.is-unset-border {
+  border: unset;
+}
+
+// content padding on the box is-paddingless
+.has-content-padding {
+  padding: 2rem;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+.has-content-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+// fix article element width not working on mobile screen
+article, aside, figure, footer, header, hgroup, section {
+    display: grid;
+}
+
+// video container
+.video-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+ 
+.video-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+ 
+/* 4x3 Aspect Ratio */
+.video-container-4x3 {
+  padding-top: 75%;
+}
+
+// for post detail
+.is-post-detail {
+  overflow: hidden;
+  text-align: center;
+}
+
+.is-post-detail:before,
+.is-post-detail:after {
+  background-color: hsl(0, 0%, 86%);
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.is-post-detail:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.is-post-detail:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+// masonry view
+.is-masonry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -1rem;
+  width: auto;
+}
+
+.is-masonry-column {
+  padding-left: 1rem;
+  background-clip: padding-box;
+}
+
+// hover on blog index
+.has-hover-effect {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  &:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+}
+
+// caption gallery
+.wrapper{
+width: 100%;
+margin: 0 auto;
+position:relative;
+}
+.thumb{
+opacity: 1;
+display: block;
+width:100%;
+height: auto;
+transition: .2s ease;
+}
+.caption{
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-transform: uppercase;
+width: 90%;
+overflow: hidden;
+}
+.overlay{
+opacity: 0
+}
+.wrapper:hover .thumb{
+opacity: .2
+}
+.wrapper:hover .overlay{
+opacity: 1
+}
+
+// caption post detail
+.is-caption-detail {
+  overflow: hidden;
+  text-align: center;
+}
+
+.is-caption-detail:before,
+.is-caption-detail:after {
+  background-color: hsla(0, 0%, 0%, 0.418);
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 7%;
+}
+
+.is-caption-detail:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.is-caption-detail:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+// hastag
+.hastag {
+  margin-bottom: 1.5rem;
+}
+
+// for navigation button
+.is-justify {
+  flex-grow: 0;
+}
+
+// is-static button
+.is-static {
+  border: unset;
+}
+
+// hero-body on mobile
+@media screen and (max-width: 400px) {
+.hero-body {
+    padding-top: 1.7rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+// for box friends
+.padding-bottom-0 {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 0;
+}
+
+// navbar burger
+@media screen and (max-width: 1023px) {
+  .navbar-hidden {
+    display: none;
+  }
+}
+
+// 404
+.error404 {
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
